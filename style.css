@@ -1,0 +1,110 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* fixed links */
+  
+  nav {
+    position: fixed;
+    display: grid;
+    top: 0;
+    z-index: 1;
+    margin: 2vh 3vw;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    grid-template-rows: auto;
+    grid-template-columns: 47vw 47vw;
+    grid-template-areas: 
+    "left right";
+  }
+  
+  .nav-left {
+    grid-area: left;
+  }
+  
+  .nav-right {
+    grid-area: right;
+    text-align: end;
+  }
+  
+  footer {
+    width: 94vw;
+    height: 2vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    margin: 95vh 3vw 3vh;
+    font-size: 16px;
+    color: black;
+    text-align: right;
+  }
+  
+  a {
+    color: black;
+  }
+  
+  a:hover {
+    color: black;
+    text-decoration: none;
+  }
+
+  a.link:hover {
+    border-bottom: solid 1px black;
+  }
+
+  a.left {
+      margin-left: 2vw;
+  }
+  
+  /* carousel */
+  
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .carousel {
+    margin: 10vh 0;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-inner > .item > img {
+    height: 80vh;
+  }
+  
+  .carousel-control.left,
+  .carousel-control.right {
+    background-image: none;
+  }
+  
+  .cursor-icons {
+    display: none;
+  }
+  
+  .carousel-control {
+    width: 50%;
+  }
+  
+  .carousel .right:hover {
+    cursor: e-resize;
+  }
+  
+  .carousel .left:hover {
+    cursor: w-resize;
+  }
+  
+  /* info styling */
+  
+  .info-container {
+    margin: 35vh 3vw;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin-block-end: 0;
+  }
